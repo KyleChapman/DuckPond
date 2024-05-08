@@ -6,8 +6,11 @@
  * that can fit on an approximately rectangular pond.
  */
 
+import java.util.*;
 
 public class DuckPond {
+    private static Scanner input = new Scanner(System.in);
+
     public static void main(String[] args) {
 
         // Declarations.
@@ -17,10 +20,18 @@ public class DuckPond {
         double pond_width;
         double duck_area;
         double pond_area;
+        int duck_amount;
 
         // Input.
+        System.out.print("Enter the length of the pond in metres: ");
+        pond_length = input.nextDouble();
+        System.out.print("Enter the width of the pond in metres: ");
+        pond_width = input.nextDouble();
 
         // Processing.
+        duck_area = DUCK_LENGTH * DUCK_WIDTH;
+        pond_area = pond_length * pond_width;
+        duck_amount = (int)Math.ceil(pond_area / duck_area);
 
         // Output.
 
