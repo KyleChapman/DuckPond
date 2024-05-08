@@ -9,6 +9,7 @@
 import java.util.*;
 
 public class DuckPond {
+    // Declare Scanner instance for input.
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -34,6 +35,6 @@ public class DuckPond {
         duck_amount = (int)Math.ceil(pond_area / duck_area);
 
         // Output.
-
+        System.out.printf("A pond with a length of %.2fm and a width of %.2fm should fit approximately %d ducks.%n", pond_length, pond_width, duck_amount);
     }
 }
